@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotels</title>
+    <link rel="stylesheet" href="style2.css"/>
+    <link rel="icon" href="C:\Users\piyar\OneDrive\Desktop\individual project\login imgs\logo1.jpg"/>
+    <!-- dancing script -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <!-- fjalla one -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <!-- nunito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <!-- poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="logo-cont">
+        <img src="C:\Users\piyar\OneDrive\Desktop\individual project\login imgs\logo1.jpg" alt="company logo" class="company-logo"/> <h3 class="company-name" onclick="goToMainPage()">EscapeRoutes</h3>
+        <h2>Where luxury meets comfort.</h2>
+    </div>
+
+    <!-- booking panel -->
+    <div class="booking-panel">
+        <div class="d1">
+            <h2>Hotel Booking :</h2>
+        </div>
+
+        <div class="input">
+            <label for="check-in"><b>Check In</b></label>
+            <input type="date" id="checkin" name="date-pick">
+        </div>
+
+        <div class="input">
+            <label for="check-out"><b>Check Out</b></label>
+            <input type="date" id="checkout" name="date-pick">
+        </div>
+
+        <div class="input">
+            <label for="guests"><b>Guests</b></label>
+            <select id="guests" name="guests" class="guests">
+                <option value="1"> 1 Adult</option>
+                <option value="2"> 2 Adult</option>
+                <option value="3"> 3 Adult</option>
+                <option value="4"> 4 Adult</option>
+                <option value="1"> 1 Adult, 1 Child</option>
+                <option value="2"> 2 Adult, 1 Child</option>
+                <option value="3"> 2 Adult, 2 Children</option>
+            </select>
+        </div>
+
+        <div class="d2">
+            <button  class="btn"><b>Find Hotels</b></button>
+        </div>
+    </div>
+
+    <!-- hotel list panel -->
+
+    <!-- sri lanka -->
+    <div class="hotel-panel">
+        <h2>Experience Sri Lanka's Finest Hotels: Luxury, Comfort, and Breathtaking Views Await You!</h2>
+        
+        <div class="scrollbar" id="scrollbar">
+            <!-- hotel 1 -->
+            <div class="hotel">
+                <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\98-acres.jpg" alt="98-acres">
+                <div class="details">
+                    <h3><a href="#" class="link">98 Acres Resort & Spa</a></h3>
+                    <p>Ella, Sri Lanka</p>
+                    <div class="star-rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <p><strong>5.0 - </strong> Exceptional - 7127 reviews</p>
+                </div>
+            </div>
+
+            <!-- hotel 2 -->
+            <div class="hotel">
+                <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\anantara.jpg" alt="anantara">
+                <div class="details">
+                    <h3><a href="#" class="link">Anantara Peace Haven </a></h3>
+                    <p>Tangalle, Sri Lanka</p>
+                    <div class="star-rating">
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="half-star">&#9733;</span>
+                        </div>
+                    </div>
+                    <p><strong>4.5 - </strong> Very Good - 3236 reviews</p>
+                </div>
+            </div>
+
+            <!-- hotel 3 -->
+            <div class="hotel">
+                <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\bellwood-manor.jpg" alt="bellwood-manor">
+                <div class="details">
+                    <h3><a href="#" class="link">Bellwood Manor</a></h3>
+                    <p>Nuwara Eliya, Sri Lanka</p>
+                    <div class="star-rating">
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="half-star">&#9733;</span>
+                            <span class="empty-star">&#9733;</span>
+                        </div>
+                    </div>
+                    <p><strong>3.5 - </strong> Good - 1987 reviews</p>
+                </div>
+            </div>
+
+            <!-- hotel 4 -->
+            <div class="hotel">
+                <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\ekho-ella.jpg" alt="ekho-ella">
+                <div class="details">
+                    <h3><a href="#" class="link">EKHO Ella</a></h3>
+                    <p>Ella, Sri Lanka</p>
+                    <div class="star-rating">
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="empty-star">&#9733;</span>
+                        </div>
+                    </div>
+                    <p><strong>4.0 - </strong> Very Good - 3025 reviews</p>
+                </div>
+            </div>
+
+            <!-- hotel 5 -->
+            <div class="hotel">
+                <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\heritance-kandalama.webp" alt="heritance-kandalama">
+                <div class="details">
+                    <h3><a href="#" class="link">Heritance Kandalama</a></h3>
+                    <p>Dambulla, Sri Lanka</p>
+                    <div class="star-rating">
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                    </div>
+                    <p><strong>5.0 - </strong> Exceptional - 6465 reviews</p>
+                </div>
+            </div>
+
+            <!-- hotel 6 -->
+            <div class="hotel">
+                <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\hotel-sigiriya.jpg" alt="hotel-sigiriya">
+                <div class="details">
+                    <h3><a href="#" class="link">Hotel Sigiriya</a></h3>
+                    <p>Sigiriya, Sri Lanka</p>
+                    <div class="star-rating">
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="half-star">&#9733;</span>
+                        </div>
+                    </div>
+                    <p><strong>4.5 - </strong> Very Good - 4924 reviews</p>
+                </div>
+            </div>
+
+            <!-- hotel 7 -->
+            <div class="hotel">
+                <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\wild-coast-tented-lodge.jpg" alt="wild-coast-tented-lodge">
+                <div class="details">
+                    <h3><a href="#" class="link">Wild Coast Tented Lodge</a></h3>
+                    <p>Yala, Sri Lanka</p>
+                    <div class="star-rating">
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                    </div>
+                    <p><strong>5.0 - </strong> Exceptional - 8941 reviews</p>
+                </div>
+            </div>
+
+            <!-- hotel 8 -->
+            <div class="hotel">
+                <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\ella-jungle.jpg" alt="ella-jungle">
+                <div class="details">
+                    <h3><a href="#" class="link"> Ella Jungle Resort</a></h3>
+                    <p>Ella, Sri Lanka</p>
+                    <div class="star-rating">
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                    </div>
+                    <p><strong>5.0 - </strong> Exceptional - 10 507 reviews</p>
+                </div>
+            </div>
+
+            <!-- hotel 9 -->
+            <div class="hotel">
+                <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\heritance-tea.jpg" alt="heritance-tea">
+                <div class="details">
+                    <h3><a href="#" class="link">Heritance Tea Factory</a></h3>
+                    <p>Nuwara Eliya, Sri Lanka</p>
+                    <div class="star-rating">
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="empty-star">&#9733;</span>
+                        </div>
+                    </div>
+                    <p><strong>4.0 - </strong> Very Good - 4896 reviews</p>
+                </div>
+            </div>
+
+            <!-- hotel 10 -->
+            <div class="hotel">
+                <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\yala-safari-camping.jpg" alt="yala-safari-camping">
+                <div class="details">
+                    <h3><a href="#" class="link">Yala Safari Camping</a></h3>
+                    <p>Yala, Sri Lanka</p>
+                    <div class="star-rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="half-star">&#9733;</span>
+                        <span class="empty-star">&#9733;</span>
+                    </div>
+                    <p><strong>3.5 - </strong> Good - 1266 reviews</p>
+                </div>
+            </div>
+
+            <!-- hotel 11 -->
+            <div class="hotel">
+                <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\golden-ridge.jpg" alt="golden-ridge">
+                <div class="details">
+                    <h3><a href="#" class="link">Golden Ridge Hotel </a></h3>
+                    <p>Nuwara Eliya, Sri Lanka</p>
+                    <div class="star-rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <p><strong>5.0 - </strong> Exceptional - 10 794 reviews</p>
+                </div>
+            </div>
+
+             <!-- hotel 12 -->
+             <div class="hotel">
+                <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\jetwing-lighthouse.jpg" alt="jetwing-lighthouse">
+                <div class="details">
+                    <h3><a href="#" class="link">Jetwing Lighthouse </a></h3>
+                    <p>Galle, Sri Lanka</p>
+                    <div class="star-rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="half-star">&#9733;</span>
+                    </div>
+                    <p><strong>4.5 - </strong> Very Good - 9561 reviews</p>
+                </div>
+            </div>
+
+            <!-- hotel 13 -->
+            <div class="hotel">
+                <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\hide-ella.jpg" alt="hide-ella">
+                <div class="details">
+                    <h3><a href="#" class="link">HIDE ELLA Resort </a></h3>
+                    <p>Ella, Sri Lanka</p>
+                    <div class="star-rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="half-star">&#9733;</span>
+                    </div>
+                    <p><strong>4.5 - </strong> Very Good - 5335 reviews</p>
+                </div>
+            </div>
+
+            <!-- hotel 14 -->
+            <div class="hotel">
+                <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\grand-serendib.jpg" alt="grand-serendib">
+                <div class="details">
+                    <h3><a href="#" class="link">Grand Serendib Hotel </a></h3>
+                    <p>Kandy, Sri Lanka</p>
+                    <div class="star-rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="half-star">&#9733;</span>
+                        <span class="empty-star">&#9733;</span>
+                    </div>
+                    <p><strong>3.5 - </strong> Good - 1335 reviews</p>
+                </div>
+            </div>
+
+            <!-- hotel 15 -->
+            <div class="hotel">
+                <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\heritance-ahungalla.jpg" alt="heritance-ahungalla">
+                <div class="details">
+                    <h3><a href="#" class="link">Heritance Ahungalla </a></h3>
+                    <p>Ahungalla, Sri Lanka</p>
+                    <div class="star-rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="empty-star">&#9733;</span>
+                    </div>
+                    <p><strong>4.0 - </strong> Very Good - 2649 reviews</p>
+                </div>
+            </div>
+
+            <!-- hotel 16 -->
+            <div class="hotel">
+                <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\thaproban-pavilion.jpg" alt="thaproban-pavilion">
+                <div class="details">
+                    <h3><a href="#" class="link">Thaproban Pavilion Waves </a></h3>
+                    <p>Unawatuna, Sri Lanka</p>
+                    <div class="star-rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="half-star">&#9733;</span>
+                    </div>
+                    <p><strong>4.5 - </strong> Very Good - 7793 reviews</p>
+                </div>
+            </div>
+
+            <!-- hotel 17 -->
+            <div class="hotel">
+                <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\Tribe-Yala.jpg" alt="Tribe-Yala">
+                <div class="details">
+                    <h3><a href="#" class="link">Tribe Yala </a></h3>
+                    <p>Yala, Sri Lanka</p>
+                    <div class="star-rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="half-star">&#9733;</span>
+                        <span class="empty-star">&#9733;</span>
+                    </div>
+                    <p><strong>3.5 - </strong>  Good - 2148 reviews</p>
+                </div>
+            </div>
+            
+            <button class="scroll-arrow" id="scroll-right">&rarr;</button>
+        </div>
+    </div>
+
+
+    <!-- japan -->
+    <div class="hotel-panel">
+        <h2>Rest in Elegance, Wake to Japan’s Beauty!</h2>
+                
+        <div class="scrollbar" id="scrollbar2">
+            <!-- hotel 1 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\treeful-treehouse.jpg" alt="treeful-treehouse">
+                    <div class="details">
+                        <h3><a href="#" class="link">Treeful Treehouse</a></h3>
+                        <p>Okinawa, Sri Lanka</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="empty-star">&#9733;</span>
+                        </div>
+                        <p><strong>4.0 - </strong> Very Good - 7928 reviews</p>
+                    </div>
+                </div>
+
+                <!-- hotel 2 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\hakone-fore.jpg" alt="hakone-fore">
+                    <div class="details">
+                        <h3><a href="#" class="link">Hakone Retreat Före </a></h3>
+                        <p>Hakone, Japan</p>
+                            <div class="star-rating">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="half-star">&#9733;</span>
+                                <span class="empty-star">&#9733;</span>
+                            </div>
+                        <p><strong>3.5 - </strong> Good - 1739 reviews</p>
+                    </div>
+                 </div>
+
+                <!-- hotel 3 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\mitsui.jpg" alt="mitsui">
+                    <div class="details">
+                        <h3><a href="#" class="link">Hotel The Mistui Kyoto </a></h3>
+                        <p>Kyoto, Japan</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="half-star">&#9733;</span>
+                        </div>
+                        <p><strong>4.5 - </strong> Very Good - 2148 reviews</p>
+                    </div>
+                </div>
+
+                <!-- hotel 4 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\suigan.jpg" alt="suigan">
+                    <div class="details">
+                        <h3><a href="#" class="link">Suigan </a></h3>
+                        <p>Sapporo, Japan</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="empty-star">&#9733;</span>
+                        </div>
+                        <p><strong>4.0 - </strong> Very Good - 1587 reviews</p>
+                    </div>
+                </div>
+
+                <!-- hotel 5 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\taoya.avif" alt="taoya">
+                    <div class="details">
+                        <h3><a href="#" class="link">Taoya </a></h3>
+                        <p>Nagasaki, Japan</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="empty-star">&#9733;</span>
+                        </div>
+                        <p><strong>4.0 - </strong>Very Good - 4834 reviews</p>
+                    </div>
+                </div>
+
+                <!-- hotel 6 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\umino.jpg" alt="umino">
+                    <div class="details">
+                        <h3><a href="#" class="link">Umino Ryotei Okinawa Nakamasou </a></h3>
+                        <p>Okinawa, Japan</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="empty-star">&#9733;</span>
+                            <span class="empty-star">&#9733;</span>
+                        </div>
+                        <p><strong>3.0 - </strong> Good - 1459 reviews</p>
+                    </div>
+                </div>
+
+                <!-- hotel 7 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\takanawa.jpg" alt="takanawa">
+                    <div class="details">
+                        <h3><a href="#" class="link">Takanawa Hanakohro </a></h3>
+                        <p>Tokyo, Japan</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="half-star">&#9733;</span>
+                        </div>
+                        <p><strong>4.5 - </strong> Very Good - 3224 reviews</p>
+                    </div>
+                </div>
+
+                <!-- hotel 8 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\awaji.jpg" alt="awaji">
+                    <div class="details">
+                        <h3><a href="#" class="link">Hotel New Awaji </a></h3>
+                        <p>Sumoto, Japan</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="empty-star">&#9733;</span>
+                        </div>
+                        <p><strong>4.0 - </strong> Very Good - 2579 reviews</p>
+                    </div>
+                </div>
+
+                <!-- hotel 9 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\takasegawa.jpg" alt="takasegawa">
+                    <div class="details">
+                        <h3><a href="#" class="link"> Kyoto Takasegawa villa </a></h3>
+                        <p>Kyoto, Japan</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                        <p><strong>5.0 - </strong> Exceptional - 2148 reviews</p>
+                    </div>
+                </div>
+
+                <!-- hotel 10 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\kurokawa.jpg" alt="kurokawa">
+                    <div class="details">
+                        <h3><a href="#" class="link"> Kurokawa Onsen Okunoyu </a></h3>
+                        <p>Kumamoto, Japan</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="half-star">&#9733;</span>
+                        </div>
+                        <p><strong>4.5 - </strong> Very Good - 7993 reviews</p>
+                    </div>
+                </div>
+
+                <!-- hotel 11 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\fuji.jpg" alt="fuji">
+                    <div class="details">
+                        <h3><a href="#" class="link"> Fuji View Hotel </a></h3>
+                        <p>Fujikawaguchiko, Japan</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                        <p><strong>5.0 - </strong> Exceptional - 8398 reviews</p>
+                    </div>
+                </div>
+
+                <!-- hotel 12 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\urashima.jpg" alt="urashima">
+                    <div class="details">
+                        <h3><a href="#" class="link"> Hotel Urashima </a></h3>
+                        <p>Wakayama, Japan</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="empty-star">&#9733;</span>
+                            <span class="empty-star">&#9733;</span>
+                        </div>
+                        <p><strong>3.0 - </strong> Good - 1123 reviews</p>
+                    </div>
+                </div>
+
+                <!-- hotel 13 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\yamazaki.jpg" alt="yamazaki">
+                    <div class="details">
+                        <h3><a href="#" class="link"> Ryokan Yamazaki </a></h3>
+                        <p>Kyoto, Japan</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="empty-star">&#9733;</span>
+                        </div>
+                        <p><strong>4.0 - </strong> Very Good - 2276 reviews</p>
+                    </div>
+                </div>
+
+
+                <button class="scroll-arrow2" id="scroll-right2">&rarr;</button>
+
+        </div>
+    </div>    
+
+    <!-- hawaii -->
+    <div class="hotel-panel">
+        <h2>Discover Paradise in Comfort: Hawaii's Finest Hotels Await!</h2>
+                
+        <div class="scrollbar" id="scrollbar3">
+            <!-- hotel 1 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\ala-moana.jpg" alt="ala-moana">
+                    <div class="details">
+                        <h3><a href="#" class="link">Ala Moana Hotel</a></h3>
+                        <p>Honolulu, Hawaii</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="empty-star">&#9733;</span>
+                            <span class="empty-star">&#9733;</span>
+                        </div>
+                        <p><strong>3.0 - </strong> Good - 2059 reviews</p>
+                    </div>
+                </div>
+
+                <!-- hotel 2 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\twin-fin.jpg" alt="twin-fin">
+                    <div class="details">
+                        <h3><a href="#" class="link">The Twin Fin Hotel </a></h3>
+                        <p>Waikiki, Hawaii</p>
+                            <div class="star-rating">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="empty-star">&#9733;</span>
+                            </div>
+                        <p><strong>4.0 - </strong> Very Good - 6149 reviews</p>
+                    </div>
+                 </div>
+
+                <!-- hotel 3 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\park-shore.avif" alt="park-shore">
+                    <div class="details">
+                        <h3><a href="#" class="link">Park Shore Waikiki </a></h3>
+                        <p>Waikiki, Hawaii</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                        <p><strong>5.0 - </strong> Exceptional - 8625 reviews</p>
+                    </div>
+                </div>
+
+                <!-- hotel 4 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\pacific-marina.jpg" alt="pacific-marina">
+                    <div class="details">
+                        <h3><a href="#" class="link">Pacific Marina Inn </a></h3>
+                        <p>Honolulu, Hawaii</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="empty-star">&#9733;</span>
+                            <span class="empty-star">&#9733;</span>
+                        </div>
+                        <p><strong>3.0 - </strong> Good - 2762 reviews</p>
+                    </div>
+                </div>
+
+                <!-- hotel 5 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\marriott.jpg" alt="marriott">
+                    <div class="details">
+                        <h3><a href="#" class="link">Waikoloa Beach Marriott Resort</a></h3>
+                        <p>Waikoloa, Hawaii</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="empty-star">&#9733;</span>
+                        </div>
+                        <p><strong>4.0 - </strong> Very Good - 5632 reviews</p>
+                    </div>
+                </div>
+
+                <!-- hotel 6 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\mauian.jpg" alt="mauian">
+                    <div class="details">
+                        <h3><a href="#" class="link">The Mauian Hotel </a></h3>
+                        <p>Lahaina, Hawaii</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                        <p><strong>5.0 - </strong> Exceptional - 7236 reviews</p>
+                    </div>
+                </div>
+
+                <!-- hotel 7 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\pacific-19.jpg" alt="pacific-19">
+                    <div class="details">
+                        <h3><a href="#" class="link">PACIFIC 19 Kona </a></h3>
+                        <p>Kailua-Kona, Hawaii</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="half-star">&#9733;</span>
+                        </div>
+                        <p><strong>4.5 - </strong> Very Good - 2229 reviews</p>
+                    </div>
+                </div>
+
+                <!-- hotel 8 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\mauna-kai.jpg" alt="mauna-kai">
+                    <div class="details">
+                        <h3><a href="#" class="link">Mauna Kai 8 </a></h3>
+                        <p>Princeville, Hawaii</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="half-star">&#9733;</span>
+                            <span class="empty-star">&#9733;</span>
+                        </div>
+                        <p><strong>3.5 - </strong>  Good - 2979 reviews</p>
+                    </div>
+                </div>
+
+                <!-- hotel 9 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\montage.jpg" alt="montage">
+                    <div class="details">
+                        <h3><a href="#" class="link"> Montage Kapalua Bay </a></h3>
+                        <p>Lahaina, Hawaii</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                        <p><strong>5.0 - </strong> Exceptional - 5148 reviews</p>
+                    </div>
+                </div>
+
+                <!-- hotel 10 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\wailea.jpg" alt="wailea">
+                    <div class="details">
+                        <h3><a href="#" class="link"> Wailea Beach Resort </a></h3>
+                        <p>Wailea, Hawaii</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="empty-star">&#9733;</span>
+                        </div>
+                        <p><strong>4.0 - </strong> Very Good - 4593 reviews</p>
+                    </div>
+                </div>
+
+                <!-- hotel 11 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\halekulani.jpg" alt="halekulani">
+                    <div class="details">
+                        <h3><a href="#" class="link"> Halekulani </a></h3>
+                        <p>Honolulu, Hawaii</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="empty-star">&#9733;</span>
+                            <span class="empty-star">&#9733;</span>
+                        </div>
+                        <p><strong>3.0 - </strong> Good - 1879 reviews</p>
+                    </div>
+                </div>
+
+                <!-- hotel 12 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\outrigger.jpg" alt="outrigger">
+                    <div class="details">
+                        <h3><a href="#" class="link"> OUTRIGGER Waikiki Beachcomber  </a></h3>
+                        <p>Honolulu, Hawaii</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="half-star">&#9733;</span>
+                        </div>
+                        <p><strong>4.5 - </strong> Very Good - 3156 reviews</p>
+                    </div>
+                </div>
+        
+                <button class="scroll-arrow3" id="scroll-right3">&rarr;</button>
+
+        </div>
+    </div> 
+    
+    
+    <!-- malta -->
+    <div class="hotel-panel">
+        <h2>Discover Malta: Where Luxury Hotels Meet Mediterranean Charm!</h2>
+                
+        <div class="scrollbar" id="scrollbar4">
+            <!-- hotel 1 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\phoenicia.webp" alt="phoenicia">
+                    <div class="details">
+                        <h3><a href="#" class="link">Hotel Phoenicia Malta</a></h3>
+                        <p>Floriana, Malta</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="empty-star">&#9733;</span>
+                        </div>
+                        <p><strong>4.0 - </strong>Very Good - 2389 reviews</p>
+                    </div>
+                </div>
+
+                <!-- hotel 2 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\osborne.jpg" alt="osborne">
+                    <div class="details">
+                        <h3><a href="#" class="link">Osborne Hotel </a></h3>
+                        <p>Valletta, Malta</p>
+                            <div class="star-rating">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="empty-star">&#9733;</span>
+                                <span class="empty-star">&#9733;</span>
+                            </div>
+                        <p><strong>3.0 - </strong>  Good - 1876 reviews</p>
+                    </div>
+                 </div>
+
+                <!-- hotel 3 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\salini-resort.webp" alt="salini-resort">
+                    <div class="details">
+                        <h3><a href="#" class="link">Salini Resort </a></h3>
+                        <p>Salina Bay, Malta</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                        <p><strong>5.0 - </strong> Exceptional - 2169 reviews</p>
+                    </div>
+                </div>
+
+                <!-- hotel 4 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\park-lane.jpg" alt="park-lane">
+                    <div class="details">
+                        <h3><a href="#" class="link">Park Lane Boutique Aparthotel </a></h3>
+                        <p>St. Paul's Bay, Malta</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                        <p><strong>5.0 - </strong> Exceptional - 4079 reviews</p>
+                    </div>
+                </div>
+
+                <!-- hotel 5 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\solana.avif" alt="solana">
+                    <div class="details">
+                        <h3><a href="#" class="link">Solana hotel & Spa</a></h3>
+                        <p>Mellieha, Malta</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="half-star">&#9733;</span>
+                        </div>
+                        <p><strong>4.5 - </strong> Very Good - 998 reviews</p>
+                    </div>
+                </div>
+
+                <!-- hotel 6 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\grand-hotel.jpg" alt="grand-hotel">
+                    <div class="details">
+                        <h3><a href="#" class="link">Grand Hotel Excelsior Malta </a></h3>
+                        <p>Valletta, Malta</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                        <p><strong>5.0 - </strong> Exceptional - 3876 reviews</p>
+                    </div>
+                </div>
+
+                <!-- hotel 7 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\paradise-bay.jpg" alt="paradise-bay">
+                    <div class="details">
+                        <h3><a href="#" class="link">Paradise Bay Resort </a></h3>
+                        <p>Mellieha, Malta</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="half-star">&#9733;</span>
+                        </div>
+                        <p><strong>4.5 - </strong> Very Good - 1540 reviews</p>
+                    </div>
+                </div>
+
+                <!-- hotel 8 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\be-hotel.jpg" alt="be-hotel">
+                    <div class="details">
+                        <h3><a href="#" class="link">be.Hotel</a></h3>
+                        <p>St. Julian's, Malta</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="half-star">&#9733;</span>
+                            <span class="empty-star">&#9733;</span>
+                        </div>
+                        <p><strong>3.5 - </strong>  Good - 1009 reviews</p>
+                    </div>
+                </div>
+
+                <!-- hotel 9 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\westin-dragonara.webp" alt="westin-dragonara">
+                    <div class="details">
+                        <h3><a href="#" class="link"> The Westin Dragonara Resort </a></h3>
+                        <p>St. Julian's, Malta</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="empty-star">&#9733;</span>
+                        </div>
+                        <p><strong>4.0 - </strong> Very Good - 1548 reviews</p>
+                    </div>
+                </div>
+
+                <!-- hotel 10 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\sliema.jpg" alt="sliema">
+                    <div class="details">
+                        <h3><a href="#" class="link"> Sliema Hotel by ST Hotels </a></h3>
+                        <p>Sliema, Malta</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="half-star">&#9733;</span>
+                        </div>
+                        <p><strong>4.5 - </strong> Very Good - 5298 reviews</p>
+                    </div>
+                </div>
+
+                <!-- hotel 11 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\embassay-valletta.jpg" alt="embassay-valletta">
+                    <div class="details">
+                        <h3><a href="#" class="link"> The Embassy Valletta Hotel </a></h3>
+                        <p>Valletta, Malta</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="empty-star">&#9733;</span>
+                        </div>
+                        <p><strong>4.0 - </strong>Very Good - 1879 reviews</p>
+                    </div>
+                </div>
+
+                <!-- hotel 12 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\malta-marriott.jpg" alt="malta-marriott">
+                    <div class="details">
+                        <h3><a href="#" class="link"> Malta Marriott Resort & Spa  </a></h3>
+                        <p>St. Julian's, Malta</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="half-star">&#9733;</span>
+                        </div>
+                        <p><strong>4.5 - </strong> Very Good - 2978 reviews</p>
+                    </div>
+                </div>
+
+                <!-- hotel 13 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\ursulino.jpg" alt="ursulino">
+                    <div class="details">
+                        <h3><a href="#" class="link"> Ursulino Valletta  </a></h3>
+                        <p>Valletta, Malta</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="half-star">&#9733;</span>
+                        </div>
+                        <p><strong>4.5 - </strong> Very Good - 4992 reviews</p>
+                    </div>
+                </div>
+
+                 <!-- hotel 14 -->
+                 <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\lands-end.jpg" alt="lands-end">
+                    <div class="details">
+                        <h3><a href="#" class="link"> Land's End Boutique Hotel  </a></h3>
+                        <p>Sliema, Malta</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                        <p><strong>5.0 - </strong> Exceptional - 3345 reviews</p>
+                    </div>
+                </div>
+        
+                <button class="scroll-arrow4" id="scroll-right4">&rarr;</button>
+
+        </div>
+    </div> 
+
+    <!-- malta -->
+    <div class="hotel-panel">
+        <h2>Switzerland Awaits: Luxury Hotels, Alpine Views, and Pure Serenity!</h2>
+                
+        <div class="scrollbar" id="scrollbar5">
+            <!-- hotel 1 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\jungfraublick.jpg" alt="jungfraublick">
+                    <div class="details">
+                        <h3><a href="#" class="link">Hotel Jungfraublick</a></h3>
+                        <p>Wengen, Switzerland</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="half-star">&#9733;</span>
+                        </div>
+                        <p><strong>4.5 - </strong>Very Good - 12 389 reviews</p>
+                    </div>
+                </div>
+
+                <!-- hotel 2 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\berghof-amaranth.jpg" alt="berghof-amaranth">
+                    <div class="details">
+                        <h3><a href="#" class="link">Hotel Berghof Amaranth </a></h3>
+                        <p>Wilderswil, Switzerland</p>
+                            <div class="star-rating">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="empty-star">&#9733;</span>
+                                <span class="empty-star">&#9733;</span>
+                            </div>
+                        <p><strong>3.5 - </strong>  Good - 3976 reviews</p>
+                    </div>
+                 </div>
+
+                <!-- hotel 3 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\beausite-park.jpg" alt="beausite-park">
+                    <div class="details">
+                        <h3><a href="#" class="link">Beausite Park Hotel & Spa </a></h3>
+                        <p>Wengen, Switzerland</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="half-star">&#9733;</span>
+                        </div>
+                        <p><strong>4.5 - </strong> Very Good - 4982 reviews</p>
+                    </div>
+                </div>
+
+                <!-- hotel 4 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\des-alpes.jpg" alt="des-alpes">
+                    <div class="details">
+                        <h3><a href="#" class="link">Hotel Des Alpes </a></h3>
+                        <p> Luzern, Switzerland</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                        <p><strong>5.0 - </strong> Exceptional - 3997 reviews</p>
+                    </div>
+                </div>
+
+                <!-- hotel 5 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\hotel-capricorn.jpg" alt="hotel-capricorn">
+                    <div class="details">
+                        <h3><a href="#" class="link">Hotel Capricorn</a></h3>
+                        <p>Zermatt, Switzerland</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="half-star">&#9733;</span>
+                            <span class="empty-star">&#9733;</span>
+                        </div>
+                        <p><strong>3.5 - </strong> Good - 2998 reviews</p>
+                    </div>
+                </div>
+
+                <!-- hotel 6 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\b2-hotel.jpg" alt="b2-hotel">
+                    <div class="details">
+                        <h3><a href="#" class="link"> B2 Hotel Zürich </a></h3>
+                        <p>Zürich, Switzerland</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="empty-star">&#9733;</span>
+                        </div>
+                        <p><strong>4.0 - </strong> Very Good - 5613 reviews</p>
+                    </div>
+                </div>
+
+                <!-- hotel 7 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\tralala.jpg" alt="tralala">
+                    <div class="details">
+                        <h3><a href="#" class="link">Tralala Hotel Montreux </a></h3>
+                        <p>Montreux, Switzerland</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="half-star">&#9733;</span>
+                            <span class="empty-star">&#9733;</span>
+                        </div>
+                        <p><strong>3.5 - </strong>  Good - 2103 reviews</p>
+                    </div>
+                </div>
+
+                <!-- hotel 8 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\motel-one-zurich.jpg" alt="motel-one-zurich">
+                    <div class="details">
+                        <h3><a href="#" class="link">Motel One Zürich</a></h3>
+                        <p>Zürich, Switzerland</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="half-star">&#9733;</span>
+                        </div>
+                        <p><strong>4.5 - </strong> Very Good - 3695 reviews</p>
+                    </div>
+                </div>
+
+                <!-- hotel 9 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\royal-plaza.jpg" alt="royal-plaza">
+                    <div class="details">
+                        <h3><a href="#" class="link"> Royal Plaza Montreux </a></h3>
+                        <p>Montreux, Switzerland</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="empty-star">&#9733;</span>
+                        </div>
+                        <p><strong>4.0 - </strong> Very Good - 3691 reviews</p>
+                    </div>
+                </div>
+
+                <!-- hotel 10 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\ibis.jpg" alt="ibis">
+                    <div class="details">
+                        <h3><a href="#" class="link"> ibis Genève Centre Nations </a></h3>
+                        <p>Genèva, Switzerland</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="half-star">&#9733;</span>
+                        </div>
+                        <p><strong>5.0 - </strong> Exceptional - 9783 reviews</p>
+                    </div>
+                </div>
+
+                <!-- hotel 11 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\hotel-rebstock.jpg" alt="hotel-rebstock">
+                    <div class="details">
+                        <h3><a href="#" class="link"> Hotel Rebstock </a></h3>
+                        <p>Luzern, Switzerland</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="empty-star">&#9733;</span>
+                        </div>
+                        <p><strong>4.0 - </strong>Very Good - 1879 reviews</p>
+                    </div>
+                </div>
+
+                <!-- hotel 12 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\vitznau.jpg" alt="vitznau">
+                    <div class="details">
+                        <h3><a href="#" class="link"> Park Hotel Vitznau </a></h3>
+                        <p>Vitznau, Switzerland</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="half-star">&#9733;</span>
+                        </div>
+                        <p><strong>4.5 - </strong> Very Good - 6443 reviews</p>
+                    </div>
+                </div>
+
+                <!-- hotel 13 -->
+                <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\hertenstein.png" alt="hertenstein">
+                    <div class="details">
+                        <h3><a href="#" class="link"> Campus Hotel Hertenstein  </a></h3>
+                        <p>Weggis, Switzerland</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="half-star">&#9733;</span>
+                        </div>
+                        <p><strong>4.5 - </strong> Very Good - 7526 reviews</p>
+                    </div>
+                </div>
+
+                 <!-- hotel 14 -->
+                 <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\waldstaetterhof.png" alt="waldstaetterhof">
+                    <div class="details">
+                        <h3><a href="#" class="link"> Waldstätterhof Hotel  </a></h3>
+                        <p>Luzern, Switzerland</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                        <p><strong>5.0 - </strong> Exceptional - 5006 reviews</p>
+                    </div>
+                </div>
+
+                <!-- hotel 15 -->
+                 <div class="hotel">
+                    <img src="C:\Users\piyar\OneDrive\Desktop\individual project\hotel imgs\pilatus-kulm.jpg" alt="pilatus-kulm">
+                    <div class="details">
+                        <h3><a href="#" class="link"> Hotel Pilatus-Kulm  </a></h3>
+                        <p>Kriens, Switzerland</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="empty-star">&#9733;</span>
+                        </div>
+                        <p><strong>4.0 - </strong> Very Good - 4982 reviews</p>
+                    </div>
+                </div>
+        
+                <button class="scroll-arrow5" id="scroll-right5">&rarr;</button>
+
+        </div>
+    </div> 
+
+
+    <!-- footer -->
+    <div class="footer">
+        <p class="copyright">
+            Copyright  &#169; 2020–2024  EscapeRoutes.com<sup>&#8482;</sup>.  All rights reserved.
+        </p>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+
+</html>

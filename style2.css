@@ -1,0 +1,347 @@
+.booking-panel{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    width: 95vw;
+    height: 200px;
+    padding: 20px;
+    background-image: url('hotel imgs/jungle-beach.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin: 50px auto;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.booking-panel::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.d1,.input,.d2{
+    z-index: 2;
+    font-family: "Poppins";
+}
+
+.d1{
+    justify-content: center;
+    font-family: "Poppins";
+    margin-top: 50px;
+    color: white;
+}
+
+.d2{
+    justify-content: center;
+    margin-top: 65px;
+}
+
+.date-pick{
+    width: 30%;
+    padding: 20px;
+
+}
+
+.guests{
+    width: 30%;
+    padding: 20px;
+}
+
+.input{
+    margin: 15px 0;
+    margin-top: 40px;
+    font-family: "Poppins";
+    color: white;
+
+}
+
+.input label{
+    display: block;
+    margin-bottom: 5px;
+    font-family: "Poppins";
+}
+
+.input input, .input select{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.btn{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Poppins";
+}
+
+.btn:hover{
+    background-color: #45a049;
+}
+
+/* company logo header */
+.logo-cont{
+    position: relative;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 10px;
+
+}
+
+.logo-cont h2{
+    font-family: "Nunito";
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 32px;
+}
+
+.company-logo{
+    width: 45px;
+    height: 45px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.company-name{
+    color: black;
+    font-family: "dancing script";
+    font-size: 25px;
+    position: absolute;
+    z-index: 2;
+    margin-left: 50px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+/* star rating */
+.star-rating {
+    display: flex;
+    justify-content: center;
+}
+  
+.star, .half-star, .empty-star {
+    font-size: 2em;
+    color: lightgray;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.star{
+    color: #4CAF50;
+}
+
+.half-star{
+    color: #4CAF50;
+    clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+}
+
+.empty-star{
+    color: lightgray;
+}
+
+/* hotel panel */
+.hotel-panel{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 0px;
+}
+
+.hotel-panel h2{
+    text-align: left;
+    font-family: "Nunito";
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.scrollbar{
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    white-space: nowrap;    
+    scrollbar-width: none;
+    -ms-overflow-style: none; 
+    scroll-behavior: smooth;
+}
+
+.scrollbar::-webkit-scrollbar {
+    display: none; 
+}
+
+.hotel{
+    flex: 0 0 320px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: inline-block;
+    width: 300px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    vertical-align: top;
+}
+
+.hotel img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+.details{
+    padding: 10px;
+}
+
+.details h3{
+    font-size: 18px;
+    font-family: "Nunito";
+    margin: 10px 0;
+}
+
+.details p{
+    font-size: 14px;
+    font-family: "Nunito";
+    color: black;
+}
+
+/* scrolling part */
+.scroll-arrow{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 285px;
+    cursor: pointer;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.scroll-arrow:hover {
+    background-color: aqua;
+}
+
+.scrollable-container::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-arrow2{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 850px;
+    cursor: pointer;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.scroll-arrow2:hover {
+    background-color: aqua;
+}
+
+.scroll-arrow3{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 1400px;
+    cursor: pointer;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.scroll-arrow3:hover {
+    background-color: aqua;
+}
+
+.scroll-arrow4{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 1960px;
+    cursor: pointer;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.scroll-arrow4:hover {
+    background-color: aqua;
+}
+
+.scroll-arrow5{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 2520px;
+    cursor: pointer;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.scroll-arrow5:hover {
+    background-color: aqua;
+}
+
+.scrollable-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* footer */
+.footer{
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    border-top: 1px solid white;
+}
+
+.copyright{
+    font-size: 11px;
+    color: black;
+    font-family: "Nunito";
+    margin: 0;
+}

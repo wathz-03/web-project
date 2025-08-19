@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Nunito";
+    background-color: white;
+    padding: 20px;
+}
+
+.country-container{
+    text-align: center;
+    margin-top: -15px;
+    margin-bottom: 10px;
+}
+
+.countries{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 20px;
+}
+
+.country{
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.country :hover{
+    transform: translateY(-5px);
+    color: aqua;
+}
+
+.country-img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.details{
+    padding: 20px;
+}
+
+.details h3{
+    font-size: 18px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.details a{
+    text-decoration: none;
+    color: black;
+}
+
+/* company logo header */
+.logo-cont{
+    position: relative;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.logo-cont h2{
+    font-family: "Nunito";
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 32px;
+}
+
+.company-logo{
+    width: 45px;
+    height: 45px;
+    position: relative;
+    z-index: 1;
+}
+
+.company-name{
+    color: black;
+    font-family: "dancing script";
+    font-size: 25px;
+    position: absolute;
+    z-index: 2;
+    margin-left: 50px;
+    margin-top: 17px;
+    cursor: pointer;
+}
+
+/* footer */
+.footer{
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    padding: 4px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    border-top: 1px solid white;
+}
+
+.copyright{
+    font-size: 11px;
+    color: black;
+    font-family: "Nunito";
+    margin: 0;
+}

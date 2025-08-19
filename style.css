@@ -1,0 +1,419 @@
+
+.body{
+    margin: 0px;
+    padding: 0px;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-image 1.5s ease-in;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.d1{
+    width: 50vw;
+    height: 5vh;
+    background-color: transparent;
+    margin-top: 0px;
+    background: rgba(0, 0, 0, 0.3) ;
+    padding: 20px;
+    border-radius: 10px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+.img{
+    width: 100vw;
+    height: 90vh;
+    position: fixed;
+    object-fit: cover;
+}
+
+.l1{
+    margin-top: -55px;
+    margin-left: 170px;
+}
+
+.item1{
+    display: inline;
+    color: white;
+    font-family: "Fjalla One";
+    font-size: 25px;
+    margin-top: 5px;
+    margin-right: 55px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.l2{
+    align-items: center;
+    position: fixed;
+    margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    z-index: 1000;
+    gap: 50px;
+}
+
+.item2{
+    display: inline-block;
+    color: white;
+    font-family: "Fjalla One";
+    font-size: 25px;
+    margin-top: 5px;
+    text-align: center;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+}
+
+.p1{
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 0px;
+    font-family: "dancing script";
+    cursor: pointer;
+}
+
+.d2{
+    width: 100vw;
+    height: 90vh;
+    background-color: transparent;
+    position: fixed;
+}
+
+.text1{
+    display: flex;
+    justify-content: center;
+    font-family: "Fjalla One";
+    margin-top: 260px;
+    font-size: 60px;
+    font-weight: 500;
+    color: aliceblue;
+    background: rgba(0, 0, 0, 0.3) ;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* login panel */
+#loginBtn {
+    padding: 10px 20px;
+    font-size: 17px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    font-family: "Fjalla One";
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+.panel {
+    display: none; 
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.65); 
+    margin-top: -73px;
+    margin-left: -594px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-cont img{
+    position: relative;
+    display: flex;
+    margin-left: -220px;
+}
+
+.logo-cont h3{
+    position: relative;
+    display: flex;
+    margin-left: 0px;
+}
+  
+.panel-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 450px;
+    height: 500px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1001;
+}
+.panel-content .p1{
+    color: black;
+    font-family: "Poppins";
+    font-size: 25px;
+    margin-top: -5px;
+    margin-left: -75px;
+    margin-bottom: 15px;
+}
+.panel-content .p2{
+    color: black;
+    font-family: "Poppins";
+    font-size: 12px;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+    z-index: 1002;
+}
+
+.login-btn-ggl, .login-btn-email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: solid,black;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: white;
+    font-family: "Poppins";
+    font-weight: 500;
+}
+
+.ggl-logo, .email-logo{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+  
+.ggl, .email {
+    background-color: white;
+    border: 1px solid #ccc;
+}
+  
+.ggl:hover, .email:hover {
+    background-color: white;
+}
+
+/* company logo header */
+.logo-cont{
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin-bottom: 20px;
+
+}
+
+.company-logo{
+    width: 45px;
+    height: 45px;
+    position: relative;
+    z-index: 1;
+}
+
+.company-name{
+    color: black;
+    font-family: "dancing script";
+    font-size: 25px;
+    position: absolute;
+    z-index: 2;
+    margin-left: 50px;
+    margin-top: 17px;
+}
+
+/* Footer Styles */
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 35vw;
+    height: 3vh;
+    background: rgba(0, 0, 0, 0.3) ;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    margin-bottom: 25px;
+}
+
+.footer-text {
+    font-family: "Fjalla One";
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Footer Panel */
+.about-panel, .support-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.close-footer {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+}
+
+.footer-content1 {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 450px;
+    height: 480px;
+    text-align: left;
+    position: relative;
+    z-index: 1001;
+}
+
+.footer-content1 p{
+    font-family: "Poppins";
+    font-size: 13px;
+    color: black;
+    cursor: pointer;
+}
+
+.footer-content1 h3{
+    font-family: "Poppins";
+    font-size: 23px;
+    margin-top: 5px;
+    color: black;
+    cursor: pointer;
+}
+
+.more-btn{
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: "Fjalla One";
+    font-size: 20px;
+}
+
+.footer-content2 {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    height: 320px;
+    text-align: left;
+    position: relative;
+    z-index: 1001;
+}
+
+.footer-content2 .p3, h4{
+    font-family: "Poppins";
+    font-size: 17px;
+    color: black;
+    cursor: pointer;
+}
+
+.footer-content2 h3{
+    font-family: "Poppins";
+    font-size: 23px;
+    margin-top: 5px;
+    color: black;
+    cursor: pointer;
+    text-align: center;
+}
+
+.footer-content2 h5{
+    cursor: pointer;
+    color: black;
+    font-size: 15px;
+    font-family: "Poppins";
+    text-align: center;
+}
+
+.footer-content3 {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    height: 320px;
+    text-align: center;
+    position: relative;
+    z-index: 1001;
+    margin-top: -500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content3 h3{
+    font-family: "Poppins";
+    font-size: 23px;
+    margin-top: 10px;
+    color: black;
+    cursor: pointer;
+}
+
+.SM-cont{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    margin: 10px;
+}
+
+.SM-logo{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.link1{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-family: "Poppins";
+}
+
+.link1 :hover{
+    color: aqua;
+    transform: translateY(-5px);
+}
+
+.SM-cont :hover{
+    color: aqua;
+    transform: translateY(-5px);
+}
